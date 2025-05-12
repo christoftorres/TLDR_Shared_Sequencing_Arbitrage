@@ -32,7 +32,7 @@ def main():
     allium_api_key = sys.argv[1]
 
     for chain in CHAINS:
-        for swap_count in range(2, MAX_SWAP_COUNT + 1):
+        for swap_count in range(1, MAX_SWAP_COUNT + 1):
 
             if not os.path.exists(OUTPUT_FOLDER+"/"+chain+"/"):
                 os.makedirs(OUTPUT_FOLDER+"/"+chain+"/")
